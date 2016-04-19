@@ -1,0 +1,29 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  background: red;
+}
+
+header {
+  height: 100px;
+  background: blue;
+  border:1px solid red;
+}
+
+main {
+  flex: 1;
+  background: orange;
+  overflow: hidden;
+}
+
+footer {
+  height: 60px;
+  background: yellow;
+}
