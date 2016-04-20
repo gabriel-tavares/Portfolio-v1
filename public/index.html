@@ -8,43 +8,58 @@
         <meta name="robots" content="index, follow">
         <meta content="" name="description">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="assets/js/fullPage.js"></script>
+        <script src="assets/js/responsive-nav.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+        $('#fullpage').fullpage({
+        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+        menu: '#menu',
+        scrollingSpeed: 1000
+        });
+        });
+        </script>
     </head>
     <body>
         <header>
-            <a data-scroll data-options='{ "easing": "linear" }' href="#trabalhos">Trabalhos</a><br>
-            <a data-scroll data-options='{ "easing": "linear" }' href="#contato">Contato</a><br>
+            <div class="row">
+                <div class="l-3 l-offset-1">
+                    <a href="#home" class="logo" data-scroll>Fixed Nav</a>
+                </div>
+                <div class="l-5 l-offset-3">
+                    <nav class="nav-collapse">
+                        <ul id="menu">
+                            <li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
+                            <li data-menuanchor="secondPage"><a href="#secondPage">Sobre mim</a></li>
+                            <li data-menuanchor="3rdPage"><a href="#3rdPage">Portfolio</a></li>
+                            <li data-menuanchor="4thpage"><a href="#4thpage">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
-        <div id="content">
-            <p>
-                .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-                .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-                .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-                .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-                .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-                .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-                .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-                .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-            </p>
-            <p id="trabalhos"><a data-scroll href="#1@#%^-bottom">Trabalhos!</a></p>
-            <p>
-                .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-                .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-                .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-                .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-                .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-                .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-                .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-                .<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>
-            </p>
-            <p id="contato"><a data-scroll href="#1@#%^-bottom">Contato!</a></p>
+        <div id="fullpage">
+            <section id="home" class="section active">
+                <h1>Fixed Nav</h1>
+                <p>The code and examples are hosted on GitHub and can be <a href="https://github.com/adtile/fixed-nav">found from here</a>. Read more about the approach from&nbsp;<a href="http://blog.adtile.me/2014/03/03/responsive-fixed-one-page-navigation/">our&nbsp;blog</a>.</p>
+            </section>
+            <section id="about" class="section">
+                <h1>About</h1>
+            </section>
+            <section id="projects" class="section">
+                <h1>Projects</h1>
+            </section>
+            <section id="blog" class="section">
+                <h1>Blog</h1>
+            </section>
         </div>
         <footer>
             footer
         </footer>
-        
+        <script src="assets/js/fastclick.js"></script>
         <script src="assets/js/scroll.js"></script>
-        <script>
-            smoothScroll.init();
-        </script>
+        <script src="assets/js/fixed-responsive-nav.js"></script>
     </body>
 </html>
