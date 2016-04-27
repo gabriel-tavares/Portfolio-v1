@@ -7,14 +7,15 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
         <meta name="robots" content="index, follow">
         <meta content="" name="description">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='assets/icons/typicons.min.css' />
+        <link rel='stylesheet' type='text/css' href='assets/css/style.css'>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="assets/js/fullPage.js"></script>
         <script src="assets/js/responsive-nav.js"></script>
         <script type="text/javascript">
         $(document).ready(function() {
         $('#fullpage').fullpage({
-        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
         anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
         menu: '#menu',
         scrollingSpeed: 1000
@@ -23,22 +24,33 @@
         </script>
     </head>
     <body>
-        <header>
-            <div class="row">
-                <div class="l-3 l-offset-1">
-                    <a href="#home" class="logo" data-scroll>Fixed Nav</a>
-                </div>
-                <div class="l-5 l-offset-3">
-                    <nav class="nav-collapse">
-                        <ul id="menu">
-                            <li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
-                            <li data-menuanchor="secondPage"><a href="#secondPage">Sobre mim</a></li>
-                            <li data-menuanchor="3rdPage"><a href="#3rdPage">Portfolio</a></li>
-                            <li data-menuanchor="4thpage"><a href="#4thpage">Contato</a></li>
-                        </ul>
-                    </nav>
+        <header class="bottom-shadow">
+            <div class="container">
+                <div class="row">
+                    <div class="l-4">
+                        <h1 class="titulo">Gabriel Tavares</h1>
+                    </div>
+                    <div class="l-6 l-offset-2">
+                        <nav class="nav-collapse">
+                            <ul id="menu">
+                                <li data-menuanchor="firstPage">
+                                    <a href="#firstPage"><span class="typcn typcn-home-outline"></span></a>
+                                </li>
+                                <li data-menuanchor="secondPage">
+                                    <a href="#secondPage"><span class="typcn typcn-business-card"></span></a>
+                                </li>
+                                <li data-menuanchor="3rdPage">
+                                    <a href="#3rdPage"><span class="typcn typcn-briefcase"></span></a>
+                                </li>
+                                <li data-menuanchor="4thpage">
+                                    <a href="#4thpage"><span class="typcn typcn-mail"></span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
+            <hr class="shadow-line" />
         </header>
         <div id="fullpage">
             <section id="home" class="section active">

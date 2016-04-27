@@ -67,24 +67,28 @@ section {
 --------------------------------------------- */
 
 header {
-  background: #f4421a;
   position: fixed;
   z-index: 3;
   width: 100%;
+  height: 60px;
   left: 0;
   top: 0;
+  background: #FFF;
+  /*display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;  
+  -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  -moz-box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.26);*/
 }
-
-.logo {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  text-decoration: none;
-  font-weight: bold;
-  line-height: 55px;
-  padding: 0 20px;
-  color: #fff;
-  float: left;
-}
-
 
 /* ------------------------------------------
   MASK
@@ -170,16 +174,16 @@ header {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   border-top: 1px solid white;
   text-decoration: none;
-  background: #f4421a;
+  background: #fff;
   padding: 0.7em 1em;
-  color: #fff;
+  color: #000;
   width: 100%;
   float: left;
 }
 
 .nav-collapse a:active,
 .nav-collapse .active a {
-  background: #b73214;
+  background: #fff;
 }
 
 @media screen and (min-width: 40em) {
@@ -194,7 +198,7 @@ header {
 }
 
 .nav-collapse ul ul a {
-  background: #ca3716;
+  background: #fff;
   padding-left: 2em;
 }
 
@@ -233,7 +237,7 @@ header {
 }
 
 .nav-toggle:before {
-  color: #fff; /* Edit this to change the icon color */
+  color: #000; /* Edit this to change the icon color */
   font: normal 28px/55px "responsivenav"; /* Edit font-size (28px) to change the icon size */
   text-transform: none;
   text-align: center;
