@@ -1,5 +1,6 @@
 .sass-cache/
 dist/
+public/
 node_modules/
 *.css.map
 vendor
