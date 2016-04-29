@@ -32,8 +32,19 @@ footer {
   height: 30px;
   clip: rect(30px, 2000px, 2000px, 0px);
 }
-.box {
-  background: #eee;
-  height: 200px;
-  margin: 3em;
+
+.box-title {
+  height: 100vh;
+display: table;
 }
+
+.vertical {
+display: table-cell;
+    vertical-align: middle;
+    text-align:center;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  }
