@@ -23,14 +23,21 @@
         });
         </script>
         <script type="text/javascript">
-var windowWidth = window.innerWidth;
-var windowHeight = window.innerHeight;
+//Initial load of page
+$(document).ready(sizeContent);
 
-alert('viewport width is: '+ windowWidth + ' and viewport height is:' + windowHeight);
+//Every resize of window
+$(window).resize(sizeContent);
+
+//Dynamically assign height
+function sizeContent() {
+    var newHeight = $("html").height() - $("#header").height() - $("#footer").height() + "px";
+    $("#teste123").css("height", newHeight);
+}
         </script>
     </head>
     <body>
-        <header class="bottom-shadow">
+        <header id="header" class="bottom-shadow">
             <div class="container">
                 <div class="row">
                     <div class="l-4">
@@ -66,8 +73,9 @@ alert('viewport width is: '+ windowWidth + ' and viewport height is:' + windowHe
                 </section>
                 <section id="about" class="section">
                     <div class="row">
-                        <div class="l-4 className">
+                        <div class="l-4" id="teste123">
                             <h1 class="vertical">Sobre</h1>
+                            
                         </div>
                         <div class="l-4">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor rutrum neque, vel tincidunt erat ultrices sed. Etiam dignissim, tellus cursus rhoncus eleifend, quam ex viverra lacus, ac molestie sapien eros vitae elit. Pellentesque tincidunt mi et facilisis suscipit. Nullam in leo ultricies, porttitor odio at, dapibus urna. Nunc pretium imperdiet ipsum, a volutpat diam. Nulla lacinia orci augue, id laoreet risus rhoncus et. Cras bibendum, libero placerat tempus lacinia, tellus leo ornare nisi, vel euismod urna libero vel lectus.</p>
@@ -85,7 +93,7 @@ alert('viewport width is: '+ windowWidth + ' and viewport height is:' + windowHe
                 </section>
             </div>
         </div>
-        <footer>
+        <footer id="footer">
             footer
         </footer>
         <script src="assets/js/fastclick.js"></script>

@@ -38,10 +38,20 @@ footer {
 display: table;
 }
 
+.container4 {
+    height: 10em;
+    position: relative;
+    border:1px solid red;
+}
+
 .vertical {
-display: table-cell;
-    vertical-align: middle;
-    text-align:center;
+  margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
