@@ -23,17 +23,27 @@
         });
         </script>
         <script type="text/javascript">
-//Initial load of page
-$(document).ready(sizeContent);
+        
+        </script>
+        <script type="text/javascript">
+        $(document).ready(sizeContent);
+        $(window).resize(sizeContent);
 
-//Every resize of window
-$(window).resize(sizeContent);
+        function sizeContent() {
+            var newHeight = $("html").height() - $("#header").height() - $("#footer").height() + "px";
+            $("section > div > div > div").css("height", newHeight);
+            var newWidth = $("section > div > div > div").width() + "px";
+            $(".section-title").css("width", newWidth);
+        };
 
-//Dynamically assign height
-function sizeContent() {
-    var newHeight = $("html").height() - $("#header").height() - $("#footer").height() + "px";
-    $("#teste123").css("height", newHeight);
-}
+        $(document).ready(function () {
+            $('ul#menu li').on('click', function () {
+                $('.section-title').removeClass("teste");
+                setTimeout(function () {
+                    $('.section-title').addClass("teste");
+                }, 100);
+            });
+        });
         </script>
     </head>
     <body>
@@ -41,7 +51,7 @@ function sizeContent() {
             <div class="container">
                 <div class="row">
                     <div class="l-4">
-                        <h1 class="titulo">Gabriel Tavares</h1>
+                        <h1 class="title">Gabriel Tavares</h1>
                     </div>
                     <div class="l-6 l-offset-2">
                         <nav class="nav-collapse">
@@ -73,23 +83,41 @@ function sizeContent() {
                 </section>
                 <section id="about" class="section">
                     <div class="row">
-                        <div class="l-4" id="teste123">
-                            <h1 class="vertical">Sobre</h1>
-                            
+                        <div class="l-2">
+                            <h1 id="testeH1" class="section-title vertical">Sobre</h1>
                         </div>
-                        <div class="l-4">
+                        <div class="l-5">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor rutrum neque, vel tincidunt erat ultrices sed. Etiam dignissim, tellus cursus rhoncus eleifend, quam ex viverra lacus, ac molestie sapien eros vitae elit. Pellentesque tincidunt mi et facilisis suscipit. Nullam in leo ultricies, porttitor odio at, dapibus urna. Nunc pretium imperdiet ipsum, a volutpat diam. Nulla lacinia orci augue, id laoreet risus rhoncus et. Cras bibendum, libero placerat tempus lacinia, tellus leo ornare nisi, vel euismod urna libero vel lectus.</p>
                         </div>
-                        <div class="l-4">
+                        <div class="l-5">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor rutrum neque, vel tincidunt erat ultrices sed. Etiam dignissim, tellus cursus rhoncus eleifend, quam ex viverra lacus, ac molestie sapien eros vitae elit. Pellentesque tincidunt mi et facilisis suscipit. Nullam in leo ultricies, porttitor odio at, dapibus urna. Nunc pretium imperdiet ipsum, a volutpat diam. Nulla lacinia orci augue, id laoreet risus rhoncus et. Cras bibendum, libero placerat tempus lacinia, tellus leo ornare nisi, vel euismod urna libero vel lectus.</p>
                         </div>
                     </div>
                 </section>
                 <section id="projects" class="section">
-                    <h1>Projects</h1>
-                </section>
+                    <div class="row">
+                        <div class="l-2">
+                            <h1 id="testeH1" class="section-title vertical">Portfolio</h1>
+                        </div>
+                        <div class="l-5">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor rutrum neque, vel tincidunt erat ultrices sed. Etiam dignissim, tellus cursus rhoncus eleifend, quam ex viverra lacus, ac molestie sapien eros vitae elit. Pellentesque tincidunt mi et facilisis suscipit. Nullam in leo ultricies, porttitor odio at, dapibus urna. Nunc pretium imperdiet ipsum, a volutpat diam. Nulla lacinia orci augue, id laoreet risus rhoncus et. Cras bibendum, libero placerat tempus lacinia, tellus leo ornare nisi, vel euismod urna libero vel lectus.</p>
+                        </div>
+                        <div class="l-5">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor rutrum neque, vel tincidunt erat ultrices sed. Etiam dignissim, tellus cursus rhoncus eleifend, quam ex viverra lacus, ac molestie sapien eros vitae elit. Pellentesque tincidunt mi et facilisis suscipit. Nullam in leo ultricies, porttitor odio at, dapibus urna. Nunc pretium imperdiet ipsum, a volutpat diam. Nulla lacinia orci augue, id laoreet risus rhoncus et. Cras bibendum, libero placerat tempus lacinia, tellus leo ornare nisi, vel euismod urna libero vel lectus.</p>
+                        </div>
+                    </div>                </section>
                 <section id="blog" class="section">
-                    <h1>Blog</h1>
+                    <div class="row">
+                        <div class="l-2">
+                            <h1 id="testeH1" class="section-title vertical">Contato</h1>
+                        </div>
+                        <div class="l-5">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor rutrum neque, vel tincidunt erat ultrices sed. Etiam dignissim, tellus cursus rhoncus eleifend, quam ex viverra lacus, ac molestie sapien eros vitae elit. Pellentesque tincidunt mi et facilisis suscipit. Nullam in leo ultricies, porttitor odio at, dapibus urna. Nunc pretium imperdiet ipsum, a volutpat diam. Nulla lacinia orci augue, id laoreet risus rhoncus et. Cras bibendum, libero placerat tempus lacinia, tellus leo ornare nisi, vel euismod urna libero vel lectus.</p>
+                        </div>
+                        <div class="l-5">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor rutrum neque, vel tincidunt erat ultrices sed. Etiam dignissim, tellus cursus rhoncus eleifend, quam ex viverra lacus, ac molestie sapien eros vitae elit. Pellentesque tincidunt mi et facilisis suscipit. Nullam in leo ultricies, porttitor odio at, dapibus urna. Nunc pretium imperdiet ipsum, a volutpat diam. Nulla lacinia orci augue, id laoreet risus rhoncus et. Cras bibendum, libero placerat tempus lacinia, tellus leo ornare nisi, vel euismod urna libero vel lectus.</p>
+                        </div>
+                    </div>
                 </section>
             </div>
         </div>
