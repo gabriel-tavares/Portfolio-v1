@@ -9,15 +9,16 @@
   outline: 0;
   -webkit-appearance: none;
   appearance: none;
+  font-family: $defaultFont;
 }
 
 @font-face {
   font-family: 'typicons';
-  src: url("assets/icons/typicons.eot");
-  src: url("assets/icons/typicons.eot?#iefix") format('embedded-opentype'),
-       url("assets/icons/typicons.woff") format('woff'),
-       url("assets/icons/typicons.ttf") format('truetype'),
-       url("assets/icons/typicons.svg#typicons") format('svg');
+  src: url("../icons/typicons.eot");
+  src: url("../icons/typicons.eot?#iefix") format('embedded-opentype'),
+       url("../icons/typicons.woff") format('woff'),
+       url("../icons/typicons.ttf") format('truetype'),
+       url("../icons/typicons.svg#typicons") format('svg');
   font-weight: normal;
   font-style: normal;
 }

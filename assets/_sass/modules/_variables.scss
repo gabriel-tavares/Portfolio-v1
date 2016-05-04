@@ -11,14 +11,15 @@ $container-s-max: 750px;
 $container-x-max: 100%;
 
 //Color
-$backgroundHtml: #fbfaf9;
+$background: #fff; //#fbfaf9
 $shadow: #000;
-$border: #fbfaf9;
+$border: #fff; //#fbfaf9
 
 //Font
 $fontSize: 16px;
-$defaultFont: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$defaultFont: 'Montserrat', sans-serif;
 $titleFont: "Ubuntu", sans-serif;
+
 
 //Teste
 $shadow-line-color: #ccc !default;

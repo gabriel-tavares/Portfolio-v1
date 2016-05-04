@@ -8,6 +8,7 @@
         <meta name="robots" content="index, follow">
         <meta content="" name="description">
         <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="assets/icons/typicons.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -28,21 +29,19 @@
         <script type="text/javascript">
         $(document).ready(sizeContent);
         $(window).resize(sizeContent);
-
         function sizeContent() {
-            var newHeight = $("html").height() - $("#header").height() - $("#footer").height() + "px";
-            $("section > div > div > div").css("height", newHeight);
-            var newWidth = $("section > div > div > div").width() + "px";
-            $(".section-title").css("width", newWidth);
+        var newHeight = $("html").height() - $("#header").height() - $("#footer").height() + "px";
+        $("section > div > div > div").css("height", newHeight);
+        var newWidth = $("section > div > div > div").width() + "px";
+        $(".section-title").css("width", newWidth);
         };
-
         $(document).ready(function () {
-            $('ul#menu li').on('click', function () {
-                $('.section-title').removeClass("teste");
-                setTimeout(function () {
-                    $('.section-title').addClass("teste");
-                }, 100);
-            });
+        $('ul#menu li').on('click', function () {
+        $('.section-title').removeClass("teste");
+        setTimeout(function () {
+        $('.section-title').addClass("teste");
+        }, 100);
+        });
         });
         </script>
     </head>
@@ -83,14 +82,11 @@
                 </section>
                 <section id="about" class="section">
                     <div class="row">
-                        <div class="l-2">
-                            <h1 id="testeH1" class="section-title vertical">Sobre</h1>
+                        <div class="l-3">
+                            <h1 class="section-title vertical">Sobre</h1>
                         </div>
-                        <div class="l-5">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor rutrum neque, vel tincidunt erat ultrices sed. Etiam dignissim, tellus cursus rhoncus eleifend, quam ex viverra lacus, ac molestie sapien eros vitae elit. Pellentesque tincidunt mi et facilisis suscipit. Nullam in leo ultricies, porttitor odio at, dapibus urna. Nunc pretium imperdiet ipsum, a volutpat diam. Nulla lacinia orci augue, id laoreet risus rhoncus et. Cras bibendum, libero placerat tempus lacinia, tellus leo ornare nisi, vel euismod urna libero vel lectus.</p>
-                        </div>
-                        <div class="l-5">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor rutrum neque, vel tincidunt erat ultrices sed. Etiam dignissim, tellus cursus rhoncus eleifend, quam ex viverra lacus, ac molestie sapien eros vitae elit. Pellentesque tincidunt mi et facilisis suscipit. Nullam in leo ultricies, porttitor odio at, dapibus urna. Nunc pretium imperdiet ipsum, a volutpat diam. Nulla lacinia orci augue, id laoreet risus rhoncus et. Cras bibendum, libero placerat tempus lacinia, tellus leo ornare nisi, vel euismod urna libero vel lectus.</p>
+                        <div class="l-9">
+                            <p>Meu nome é Gabriel, trabalho com desenvolvimento front-end, tendo domínio em todas as etapas client-side (wireframe, layout e codificação). Sou formado em Design Gráfico e atualmente estou terminando Análise e Desenvolvimento de Sistemas. Atualmente estou procurando atualizar meus conhecimentos na área front-end (Sass, Grunt, Bower, Microdata, ...).</p>
                         </div>
                     </div>
                 </section>
@@ -105,7 +101,8 @@
                         <div class="l-5">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor rutrum neque, vel tincidunt erat ultrices sed. Etiam dignissim, tellus cursus rhoncus eleifend, quam ex viverra lacus, ac molestie sapien eros vitae elit. Pellentesque tincidunt mi et facilisis suscipit. Nullam in leo ultricies, porttitor odio at, dapibus urna. Nunc pretium imperdiet ipsum, a volutpat diam. Nulla lacinia orci augue, id laoreet risus rhoncus et. Cras bibendum, libero placerat tempus lacinia, tellus leo ornare nisi, vel euismod urna libero vel lectus.</p>
                         </div>
-                    </div>                </section>
+                    </div>
+                </section>
                 <section id="blog" class="section">
                     <div class="row">
                         <div class="l-2">
@@ -121,8 +118,14 @@
                 </section>
             </div>
         </div>
-        <footer id="footer">
-            footer
+        <footer id="footer" class="top-shadow">
+            <div class="container">
+                <div class="row">
+                    <div class="l-4 col-center">
+                        <p class="copyright">:D - © Copyright 2016 - Gabriel Tavares</p>
+                    </div>
+                </div>
+            </div>
         </footer>
         <script src="assets/js/fastclick.js"></script>
         <script src="assets/js/scroll.js"></script>
