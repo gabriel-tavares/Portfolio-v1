@@ -1,0 +1,52 @@
+p {
+	line-height:2.1rem;
+}
+.title {
+    font-size: 1.5rem;
+    font-family: $titleFont;
+    font-style: italic;
+    font-weight: 800;
+    line-height: 60px;
+}
+.section-title {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 4.5rem;
+    font-family: $titleFont;
+    letter-spacing: 2px;
+    margin:0 auto;
+    color: $border;
+}
+
+.copyright{
+  font-size: 0.6rem;
+  color: #97A2A6;
+  line-height: 40px;
+  text-align:center;
+}
+
+
+.teste {
+    animation: animacao 1.3s linear 0.8s forwards;
+}
+
+@keyframes animacao {
+    0% {
+        color: $border($border, 0.75%);
+        text-shadow: 0;
+    }
+
+    1% {
+        color: $border($border, 0.75%);
+        text-shadow: 0 -1px 0 darken($border, 6%), 0 -1px 2px rgba($shadow, 0.1), 0 1px 0 darken($border, 1%);
+    }
+
+    20% {
+        text-shadow: 0 1px 0 darken($border, 13.5%), 0 1px 0 darken($border, 15%), 0 1px 0 darken($border, 13.5%), 0 1px 0 darken($border, 21%), 0 1px 0 darken($border, 20%), 0 1px 1px rgba($shadow, 0.1), 0 0 3px rgba($shadow, 0.1), 0 1px 3px rgba($shadow, 0.2), 0 1px 5px rgba($shadow, 0.1), 0 5px 10px rgba($shadow, 0.15), 0 5px 5px rgba($shadow, 0.1), 0 5px 5px rgba($shadow, 0.15);
+    }
+
+    100% {
+    	color: #fff;
+        text-shadow: 0 1px 0 darken($border, 20%), 0 2px 0 darken($border, 21%), 0 3px 0 darken($border, 26.75%), 0 4px 0 darken($border, 27.5%), 0 5px 0 darken($border, 33.5%), 0 6px 1px rgba($shadow, 0.1), 0 0 5px rgba($shadow, 0.1), 0 1px 3px rgba($shadow, 0.3), 0 3px 5px rgba($shadow, 0.2), 0 5px 10px rgba($shadow, 0.25), 0 10px 10px rgba($shadow, 0.2), 0 20px 20px rgba($shadow, 0.15);
+    }
+}

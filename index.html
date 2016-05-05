@@ -7,33 +7,208 @@
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
         <meta name="robots" content="index, follow">
         <meta content="" name="description">
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+        <link rel='stylesheet' type='text/css' href='assets/icons/typicons.min.css' />
+        <link rel='stylesheet' type='text/css' href='assets/css/style.css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="assets/js/fullPage.js"></script>
+        <script src="assets/js/responsive-nav.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+        $('#fullpage').fullpage({
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+        menu: '#menu',
+        scrollingSpeed: 1000
+        });
+        });
+        </script>
+        <script type="text/javascript">
+        
+        </script>
+        <script type="text/javascript">
+        $(document).ready(sizeContent);
+        $(window).resize(sizeContent);
+        function sizeContent() {
+        var newHeight = $("html").height() - $("#header").height() - $("#footer").height() + "px";
+        $("section > div > div > div").css("height", newHeight);
+        var newWidth = $("section > div > div > div").width() + "px";
+        $(".section-title").css("width", newWidth);
+        };
+        $(document).ready(function () {
+        $('ul#menu li').on('click', function () {
+        $('.section-title').removeClass("teste");
+        setTimeout(function () {
+        $('.section-title').addClass("teste");
+        }, 100);
+        });
+        });
+        </script>
+
     </head>
     <body>
-        <div class="wrapper">
-            <header>
-                Header element
-            </header>
-            <main>
-            <h1> Main</h1><br><h1> Main</h1><br>
-            <h1> Main</h1><br>
-            <h1> Main</h1><br><h1> Main</h1><br>
-            <h1> Main</h1><br>
-            <h1> Main</h1><br><h1> Main</h1><br>
-            <h1> Main</h1><br>
-            <h1> Main</h1><br><h1> Main</h1><br>
-            <h1> Main</h1><br>
-            <h1> Main</h1><br><h1> Main</h1><br>
-            <h1> Main</h1><br>
-            <h1> Main</h1><br><h1> Main</h1><br>
-            <h1> Main</h1><br>
-            <h1> Main</h1><br>
-            <h1> Main</h1><br>
-            <h1> Main</h1><br>
-            </main>
-            <footer>
-                Footer
-            </footer>
+        <header id="header" class="bottom-shadow">
+            <div class="container">
+                <div class="row">
+                    <div class="l-4">
+                        <h1 class="title">Teste</h1>
+                    </div>
+                    <div class="l-6 l-offset-2">
+                        <nav class="nav-collapse">
+                            <ul id="menu">
+                                <li data-menuanchor="firstPage">
+                                    <a href="#firstPage"><span class="typcn typcn-home-outline"></span></a>
+                                </li>
+                                <li data-menuanchor="secondPage">
+                                    <a href="#secondPage" id="skill"><span class="typcn typcn-business-card"></span></a>
+                                </li>
+                                <li data-menuanchor="3rdPage">
+                                    <a href="#3rdPage"><span class="typcn typcn-briefcase"></span></a>
+                                </li>
+                                <li data-menuanchor="4thpage">
+                                    <a href="#4thpage"><span class="typcn typcn-mail"></span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <hr class="shadow-line" />
+        </header>
+        <div id="fullpage">
+            <div class="container">
+                <section id="home" class="section active">
+                    <h1>Fixed Nav</h1>
+                    <p>The code and examples are hosted on GitHub and can be <a href="https://github.com/adtile/fixed-nav">found from here</a>. Read more about the approach from&nbsp;<a href="http://blog.adtile.me/2014/03/03/responsive-fixed-one-page-navigation/">our&nbsp;blog</a>.</p>
+                </section>
+                <section id="about" class="section">
+                    <div class="row">
+                        <div class="l-3">
+                            <h1 class="section-title vertical">Sobre</h1>
+                        </div>
+                        <div class="l-9">
+                            <div class="row">
+                                <div class="l-12">
+                                    <p>Meu nome é Gabriel, trabalho com desenvolvimento front-end, tendo domínio em todas as etapas client-side (wireframe, layout e codificação). Sou formado em Design Gráfico e atualmente estou terminando Análise e Desenvolvimento de Sistemas. Atualmente estou procurando atualizar meus conhecimentos na área front-end (Sass, Grunt, Bower, Microdata, ...).</p>
+                                </div>
+                                <div class="l-6">
+                                    <div class="s-l-4 s-x-12 desenvolvimento">
+                    <h1 class="title-skill"> <i class="fa fa-code fa-2x desenvolvimento-icon"></i> <span>Desenvolvimento Front-end</span></h1>
+                    <div class="skillbar clearfix " data-percent="100%">
+                        <div class="skillbar-title"><span>HTML5</span></div>
+                        <div class="skillbar-bar"></div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="100%">
+                        <div class="skillbar-title"><span>CSS</span></div>
+                        <div class="skillbar-bar"></div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="60%">
+                        <div class="skillbar-title"><span>Javascript</span></div>
+                        <div class="skillbar-bar"></div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="60%">
+                        <div class="skillbar-title"><span>JQuery</span></div>
+                        <div class="skillbar-bar"></div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="60%">
+                        <div class="skillbar-title"><span>Grunt</span></div>
+                        <div class="skillbar-bar"></div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="70%">
+                        <div class="skillbar-title"><span>SASS</span></div>
+                        <div class="skillbar-bar"></div>
+                    </div>
+                </div>
+                <div class="s-l-4 s-x-12 design">
+                    <h1 class="title-skill"> <i class="fa fa-paint-brush fa-2x design-icon"></i> <span>Design</span></h1>
+                    <div class="skillbar clearfix " data-percent="60%">
+                        <div class="skillbar-title"><span>UI/UX</span></div>
+                        <div class="skillbar-bar"></div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="100%">
+                        <div class="skillbar-title"><span>Wireframe</span></div>
+                        <div class="skillbar-bar"></div>
+                    </div>
+                </div>
+                <div class="s-l-4 s-x-12 ferramenta">
+                    <h1 class="title-skill"> <i class="fa fa-wrench fa-2x ferramenta-icon"></i> <span>Ferramentas e Técnicas</span></h1>
+                    <div class="skillbar clearfix " data-percent="80%">
+                        <div class="skillbar-title"><span>Axure</span></div>
+                        <div class="skillbar-bar"></div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="80%">
+                        <div class="skillbar-title"><span>Photoshop</span></div>
+                        <div class="skillbar-bar"></div>
+                    </div>
+                    <div class="skillbar clearfix " data-percent="50%">
+                        <div class="skillbar-title"><span>GIT/SVN</span></div>
+                        <div class="skillbar-bar"></div>
+                    </div>
+                </div>
+                                </div>
+                                <div class="l-6">
+                                    l-6c
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="projects" class="section">
+                    <div class="row">
+                        <div class="l-2">
+                            <h1 id="testeH1" class="section-title vertical">Portfolio</h1>
+                        </div>
+                        <div class="l-5">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor rutrum neque, vel tincidunt erat ultrices sed. Etiam dignissim, tellus cursus rhoncus eleifend, quam ex viverra lacus, ac molestie sapien eros vitae elit. Pellentesque tincidunt mi et facilisis suscipit. Nullam in leo ultricies, porttitor odio at, dapibus urna. Nunc pretium imperdiet ipsum, a volutpat diam. Nulla lacinia orci augue, id laoreet risus rhoncus et. Cras bibendum, libero placerat tempus lacinia, tellus leo ornare nisi, vel euismod urna libero vel lectus.</p>
+                        </div>
+                        <div class="l-5">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor rutrum neque, vel tincidunt erat ultrices sed. Etiam dignissim, tellus cursus rhoncus eleifend, quam ex viverra lacus, ac molestie sapien eros vitae elit. Pellentesque tincidunt mi et facilisis suscipit. Nullam in leo ultricies, porttitor odio at, dapibus urna. Nunc pretium imperdiet ipsum, a volutpat diam. Nulla lacinia orci augue, id laoreet risus rhoncus et. Cras bibendum, libero placerat tempus lacinia, tellus leo ornare nisi, vel euismod urna libero vel lectus.</p>
+                        </div>
+                    </div>
+                </section>
+                <section id="blog" class="section">
+                    <div class="row">
+                        <div class="l-2">
+                            <h1 id="testeH1" class="section-title vertical">Contato</h1>
+                        </div>
+                        <div class="l-5">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor rutrum neque, vel tincidunt erat ultrices sed. Etiam dignissim, tellus cursus rhoncus eleifend, quam ex viverra lacus, ac molestie sapien eros vitae elit. Pellentesque tincidunt mi et facilisis suscipit. Nullam in leo ultricies, porttitor odio at, dapibus urna. Nunc pretium imperdiet ipsum, a volutpat diam. Nulla lacinia orci augue, id laoreet risus rhoncus et. Cras bibendum, libero placerat tempus lacinia, tellus leo ornare nisi, vel euismod urna libero vel lectus.</p>
+                        </div>
+                        <div class="l-5">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc porttitor rutrum neque, vel tincidunt erat ultrices sed. Etiam dignissim, tellus cursus rhoncus eleifend, quam ex viverra lacus, ac molestie sapien eros vitae elit. Pellentesque tincidunt mi et facilisis suscipit. Nullam in leo ultricies, porttitor odio at, dapibus urna. Nunc pretium imperdiet ipsum, a volutpat diam. Nulla lacinia orci augue, id laoreet risus rhoncus et. Cras bibendum, libero placerat tempus lacinia, tellus leo ornare nisi, vel euismod urna libero vel lectus.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
+        <footer id="footer" class="top-shadow">
+            <div class="container">
+                <div class="row">
+                    <div class="l-4 col-center">
+                        <p class="copyright">:D - © Copyright 2016 - Gabriel Tavares</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+                <script type="text/javascript">
+         $(function () {
+        $("#skill").click(function () {
+            jQuery('.skillbar').each(function(){
+                jQuery(this).find('.skillbar-bar').animate({
+                    width:""},1);
+            });
+            setTimeout(function () {
+                jQuery('.skillbar').each(function(){
+                    jQuery(this).find('.skillbar-bar').animate({
+                        width:jQuery(this).attr('data-percent')
+                    },1500);
+                });
+            }, 1);
+        });
+    });
+        </script>
+        <script src="assets/js/fastclick.js"></script>
+        <script src="assets/js/scroll.js"></script>
+        <script src="assets/js/fixed-responsive-nav.js"></script>
     </body>
 </html>

@@ -9,10 +9,22 @@
   outline: 0;
   -webkit-appearance: none;
   appearance: none;
+  font-family: $defaultFont;
+}
+
+@font-face {
+  font-family: 'typicons';
+  src: url("../icons/typicons.eot");
+  src: url("../icons/typicons.eot?#iefix") format('embedded-opentype'),
+       url("../icons/typicons.woff") format('woff'),
+       url("../icons/typicons.ttf") format('truetype'),
+       url("../icons/typicons.svg#typicons") format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body{
-  //font-family: $default-font-family;
+  font-size:$fontSize;
 }
 
 a{
