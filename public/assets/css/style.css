@@ -707,7 +707,7 @@ p {
   margin-bottom: 15px;
   width: 100%;
   background: #C8C8C8;
-  height: 35px;
+  height: 25px;
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -726,9 +726,9 @@ p {
   position: absolute;
   top: 0;
   left: 0;
-  width: 110px;
+  width: 90px;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 0.7rem;
   color: #ffffff;
   background: #6adcfa;
   -webkit-border-top-left-radius: 3px;
@@ -740,9 +740,9 @@ p {
 .skillbar-title span {
   display: block;
   background: rgba(0, 0, 0, 0.1);
-  padding: 0 20px;
-  height: 35px;
-  line-height: 35px;
+  padding: 0 10px;
+  height: 25px;
+  line-height: 25px;
   -webkit-border-top-left-radius: 3px;
   -webkit-border-bottom-left-radius: 3px;
   -moz-border-radius-topleft: 3px;
@@ -751,7 +751,7 @@ p {
   border-bottom-left-radius: 3px; }
 
 .skillbar-bar {
-  height: 35px;
+  height: 25px;
   width: 0px;
   background: #6adcfa;
   border-radius: 3px;
@@ -763,7 +763,7 @@ p {
   right: 10px;
   top: 0;
   font-size: 11px;
-  height: 35px;
+  height: 25px;
   line-height: 35px;
   color: #ffffff;
   color: rgba(0, 0, 0, 0.4); }
