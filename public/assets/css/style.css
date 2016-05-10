@@ -82,6 +82,12 @@ p {
   font-weight: 800;
   line-height: 60px; }
 
+.title-skill {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-bottom: 10px; }
+
 .section-title {
   font-style: italic;
   font-weight: 800;
@@ -706,7 +712,9 @@ p {
   display: block;
   margin-bottom: 15px;
   width: 100%;
-  background: #C8C8C8;
+  border-right: 1px solid #D7DADD;
+  border-bottom: 1px solid #D7DADD;
+  box-shadow: 4px 4px 10px #DDDEE3;
   height: 25px;
   border-radius: 3px;
   -moz-border-radius: 3px;
@@ -771,28 +779,10 @@ p {
 .desenvolvimento-icon {
   color: #d35400; }
 
-.desenvolvimento .skillbar-title {
-  background: #d35400; }
+.skillbar-title {
+  background: #595959; }
 
-.desenvolvimento .skillbar-bar {
-  background: #e67e22; }
-
-.ferramenta-icon {
-  color: #00A600; }
-
-.ferramenta .skillbar-title {
-  background: #00A600; }
-
-.ferramenta .skillbar-bar {
-  background: #00E500; }
-
-.design .skillbar-title {
-  background: #00407F; }
-
-.design .skillbar-bar {
-  background: #0081FF; }
-
-.design-icon {
-  color: #00407F; }
+.skillbar-bar {
+  background: #A6A6A6; }
 
 /*# sourceMappingURL=style.css.map */
